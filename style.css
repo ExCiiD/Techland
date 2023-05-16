@@ -72,7 +72,7 @@
     position: absolute;
     height: 500px;
     width: 500px;
-    bottom: 100px;
+    bottom: -50px;
     z-index: 1;
 }
 
