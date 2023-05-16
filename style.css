@@ -588,6 +588,14 @@
 
 /* Section carousel */
 
+.carousel_product {
+    width: 100%;
+    background-image: url(img/hero-background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
 #container {
   height: 100vh;
   width: 100%;
@@ -628,9 +636,6 @@
 #galleryView {
   height: 100vh;
   width: 100%;
-  background-image: url(img/hero-background.png);
-  background-repeat: no-repeat;
-  background-size: cover
   display: flex;
   justify-content: center;
   align-items: center;
@@ -671,7 +676,7 @@
   height: 480px;
   width: 600px;  
   border-radius: 5px;
-  background-color: #eb9100;
+  background-color: transparent;
   margin-left: 10px;
   margin-right: 10px;
   z-index: 1;
@@ -690,7 +695,7 @@
   border-radius: 5px;
   transform: skewy(5deg);
   transform-origin: top right;
-  background-color: #eb9100;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -709,7 +714,7 @@
   border-radius: 5px;
   transform: skewy(-5deg);
   transform-origin: top left;
-  background-color: #eb9100;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -754,8 +759,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
-      
+@media screen and (max-width: 1024px) {
       
       #galleryContainer { 
         height: 500px;
@@ -768,70 +772,12 @@
         box-sizing: border-box;
         position: relative;
       }
-      
-      #toggle {
-        height: 10vh;
-        width: 200px;
-        display: flex;
-        align-items: center;
-        margin: 10px;
-      }
-      
-      #tilesView {
-        min-height: 100vh;
-        width: 100vw;
-        background: rgb(246,210,106);
-        background: linear-gradient(111deg, rgba(246,210,106,1) 0%, rgba(255,159,0,1) 52%, rgba(251,197,100,1) 100%);
-        display: none;
-        justify-content: center;
-        align-items: center;
-        
-      }
-      
-      #galleryView {
-        height: 100vh;
-        width: 100%;
-        background: rgb(246,210,106);
-        background: linear-gradient(111deg, rgba(246,210,106,1) 0%, rgba(255,159,0,1) 52%, rgba(251,197,100,1) 100%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      #outer3 {
-        width: 100px;
-        height: 40px;
-        background-color: transparent;
-        margin: 10px auto;
-        transition: all 0.5s;
-      }
-      
-      #slider3 {
-        height: 36px;
-        width: 46px;
-        background-color: orange;
-        border-radius: 3px;  
-        transition: all 0.5s;
-      }
-      
-      #slider3.active {
-        -webkit-transform: translatex(50px);
-        -ms-transform: translatex(50px);
-        -o-transform: translatex(50px);
-        transform: translatex(50px);
-        transition: all 0.5s;
-        background-color: orange;
-      }
-      
-      #outer3.outerActive {
-        background-color: white;
-        border: 2px solid white;
-        transition: all 0.5s;
-      }
-      
+    
+
       #mainView {
         height: 280px;
         width: 300px;  
+        background-size: contain;
         border-radius: 5px;
         background-color: #eb9100;
         margin-left: 10px;
@@ -881,24 +827,6 @@
       #rightView:hover {
         opacity: 1;
         transition: all 1s;
-      }
-      
-      .navBtns {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        border: none;
-        position: absolute;
-        opacity: 0.8;
-        background-color: transparent;
-        cursor: pointer;
-        color: white;
-      }
-      
-      .navBtns:hover {
-        opacity: 1;
-        transition: all 1s;
-        background-color: #eb9100;
       }
       
       #navLeft {

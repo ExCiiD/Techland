@@ -9,7 +9,6 @@ function openFormulaire1() {
 }
 
 
-
 document.getElementById("outer3").addEventListener("click", toggleState3);
     
 function toggleState3() {
