@@ -116,6 +116,45 @@
     color: white;
     border: solid #8f01ff 2px;
 }
+
+.sectionPeripherique {
+    display: none;
+}
+
+.sectionTourPC {
+    display: none;
+ }
+
+ .sectionEcranPC {
+    display: none;
+ }
+ 
+ .sectionPeripherique {
+    display: none;
+ }
+
+ .sectionTourPC {
+    display: none;
+ }
+
+ .sectionEcranPC {
+    display: none;
+ }
+ .sectionPortable.letsgo1 {
+    display: none;
+ }
+
+ .sectionPeripherique.letsgo1 {
+    display: block;
+ }
+
+ .sectionTourPC.letsgo2 {
+    display: block;
+ }
+
+ .sectionEcranPC.letsgo3 {
+    display: block;
+ }
 /*BUTTON CARD */
 /* DESCRIPTION CARD */
 
@@ -685,3 +724,5 @@
         margin-bottom: 20px;
 }
 }
+
+ 
