@@ -59,7 +59,12 @@
         }
         /* CSS POUR CAROUSEL ACCUEIL */
 /* CATEGORY CONTAINER */
-
+/* GROUPE DE CARTES */
+.description-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 /* DESCRIPTION CARD */
 .description-card {
     display: flex;
