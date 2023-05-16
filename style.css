@@ -3,6 +3,9 @@
     padding:0px;
     box-sizing: border-box;
 }
+body{
+    background-color: black;
+}
 
 .topnavbar li{
     list-style: none;
@@ -342,7 +345,6 @@ h4 {
 /* CSS Footer */
 
 .footer_container {
-    background-color: black;
     list-style: none;
     display: flex;
     flex-direction: column;
