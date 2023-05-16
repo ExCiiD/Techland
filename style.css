@@ -3,6 +3,164 @@
     margin: 0;
     box-sizing: border-box;
 }
+.record {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+
+.violet {
+    display: flex;
+    flex-direction: column;
+    background-color: #A568E7;
+    padding-top: 100px;
+    width: 600px;
+    height: 600px;
+    margin: 100px;
+}
+
+.record-image {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 480px;
+    left: -180px;
+    width: 100px;
+    height: 150px;
+    margin: 30px;
+
+}
+
+.record-paragraphe {
+    position: relative;
+    right: -250px;
+    bottom: -300px;
+}
+
+h3 {
+    
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.record-texte-bottom {
+    position: relative;
+    top: -30px;
+    left: -290px;
+}
+
+.fleche {
+    position: relative;
+    top: -20px;
+    left: 80px;
+}
+.colortxt {
+    
+    color: white;
+}
+/*Média query*/
+
+@media screen and (min-width: 1845px){
+    .record {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1440px){
+    .record {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1010px){
+    .record-paragraphe {
+        top: 160px;
+        left: 20px;
+    }
+    .record-texte-bottom {
+        top: -110px;
+        left: 60px;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .violet img{
+        height: auto;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    h4 {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 575px){
+    .violet img {
+        width: 100%;
+    }
+
+    .record-image {
+        top: 380px;
+        left: 10px;
+    }
+
+    .record-paragraphe {
+        top: 110px;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+
+}
+@media screen and (max-width: 425px) {
+    .record-image {
+        top: 330px;
+        left: 0px;
+    }
+    
+    .violet img {
+        width: 100%;
+    }
+
+    .record-paragraphe {
+        top: 100px;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    .record-texte-bottom {
+        top: -100px;
+        left: 20px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .record-image {
+        height: 90px;
+        top: 270px;
+    }
+    .violet img {
+        width: 100%;
+        height: 150px;
+    }
+    .record-texte-bottom {
+        top: -100px;
+        left: 45px;
+    }
+}
 /* CATEGORY CONTAINER */
 .category-container{
     width:100%;
