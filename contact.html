@@ -9,7 +9,85 @@
 </head>
 <body>
 
+    <section class="formulaire_section">
+        <div class="formulaire_container">
+            <!-- <div class="titre_formulaire">
+                <h1>Contact</h1>
+            </div> -->
+
+            <form action="" method="get">
+                <div class="formulaire_choix_1">
+                    <div class="items_input">
+                        <div class="items_formulaire">
+                            <label for="nom">Nom :</label><br />
+                            <input type="text" name="nom" id="nom" placeholder="Nom*" required />
+                        </div>
+
+                        <div class="items_formulaire">
+                            <label for="prenom">Prénom :</label><br />
+                            <input type="text" name="prenom" id="prenom" placeholder="Prénom*" required />
+                        </div>
+                    </div>
+
+                    <div class="button_suivant" onclick="openFormulaire1()">
+                        <button type="button">Suivant</button>
+                    </div>
+                </div>
+
+                <div class="formulaire_choix_2">
+                    <div class="items_input">
+                        <div class="items_formulaire">
+                            <label for="email">Email :</label><br />
+                            <input type="mail" name="email" id="email" placeholder="Email*" required />
+                        </div>
+
+                        <div class="items_formulaire">
+                            <label for="telephone">Téléphone :</label><br />
+                            <input type="tel" name="telephone" id="telephone" placeholder="Numéro Téléphone*" required />
+                        </div>
+                    </div>
+
+                    <div class="button_suivant_2" onclick="openFormulaire2()">
+                        <button type="button">Suivant</button>
+                    </div>
+                </div>
+
+                <div class="formulaire_choix_3">
+                    <div class="items_input">
+
+                        <div class="items_formulaire">
+                            <label for="sujet-contact">Raison du contact ?</label><br />
+                            <select name="sujet-contact" id="sujet-contact" required>
+                                <option value="">-- Choisir une raison --</option>
+                                <option value="achat">Achat</option>
+                                <option value="sav">SAV</option>
+                                <option value="partenaire">Partenariat</option>
+                                <option value="nous_rejoindre">Nous rejoindre</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="items_formulaire">
+                            <label for="suggestion">Ecris nous :</label><br />
+                            <textarea name="suggestion" id="suggestion" cols="auto" rows="auto"
+                                placeholder="Dites nous tout..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="button_envoyer">
+                        <input type="submit" value="Envoyez" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <footer class="footer_container">
+
+
+        <div class="img-fond-footer">
+        <img src="img/Violate_Elipse_3.png" alt="Violate_Elipse_3" class="image-fond-footer">
+        </div>
 
         <!-- footer class top -->
         <div class="top_container">
@@ -62,7 +140,7 @@
                     <p>- 5 rue de Montford<br>
                         ZI 97410 St Pierre</p><br>
                     <p>tel : +262 262 52 65 58</p><br>
-                    <p>mail : serviceclient@contacttechland.com</p>
+                    <p><a href="mailto:serviceclient@contacttechland.com">mail : serviceclient@contacttechland.com</a></p>
                 </div>
             </div>
 
