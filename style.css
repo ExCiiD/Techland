@@ -18,6 +18,16 @@ body{
     
 }
 
+.topnav-links{
+    color: white;
+    text-decoration: none;
+}
+
+.topnav-links:hover{
+    color: violet;
+    text-decoration: underline;
+}
+
 .topnavbar{
     display: flex;
     flex-direction: row;
@@ -856,3 +866,83 @@ h4 {
         padding: 30px;
     }
 }
+
+
+/* section description Katana 15 B12V */
+
+
+.section_katana{
+    display: flex;
+    justify-content: center;
+    background-color: #1E1E1E;
+    height: 50vh;
+    
+}
+
+.description_container_katana{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-image: url("img/background_katana15.jpg");
+    background-size: cover  ;
+    width: 80%;
+    margin-top: 30px;
+   
+}
+
+.katana_sharpen_container{
+    margin-bottom: 30px;
+}
+
+
+.katana_sharpen_container h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.section_katana p{
+    font-size: 12px;
+    width: 90%;
+    margin: 15px;
+}
+
+.button_katana{
+    width: 100px;
+    height: 30px;
+    background-color: brown;
+    border-top: 0.5px brown;
+    border-bottom: 0.5px brown;
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    
+
+
+    .katana_sharpen_container h1{
+        font-size: 30px;
+
+    }
+
+    .katana_sharpen_container h2{
+        font-size: 20px;  
+    }
+
+    .section_katana p{
+        font-size: 10px;
+        width: 90%;
+    }
+
+    .description_container_katana{
+        justify-content: center;
+    }
+  }
+
+/* Fin section description Katana 15 B12V */
