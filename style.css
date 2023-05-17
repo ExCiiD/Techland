@@ -471,7 +471,18 @@ body, html{
  }
 /*BUTTON CARD */
 /* DESCRIPTION CARD */
+@media screen and (max-width: 425px) {
+    .img-DESCcard-portable {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    top: 170px;
+    }
+    .description hr {
+        width: 230px;
+    }
 
+}
 /* CSS Footer */
 
 .footer_container {
