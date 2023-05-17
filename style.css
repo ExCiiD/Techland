@@ -140,7 +140,7 @@ body{
     background-color: #A568E7;
     padding-top: 100px;
     width: 600px;
-    height: 600px;
+    height: 500px;
     margin: 100px;
 }
 
@@ -148,12 +148,11 @@ body{
     display: flex;
     justify-content: space-around;
     position: relative;
-    top: 480px;
-    left: -180px;
+    top: 400px;
+    left: -150px;
     width: 100px;
-    height: 150px;
+    height: 100px;
     margin: 30px;
-
 }
 
 .record-paragraphe {
@@ -162,20 +161,20 @@ body{
     bottom: -300px;
 }
 
-h3 {
+.record-paragraphe h3 {
     
     font-size: 4rem;
     text-transform: uppercase;
 }
 
-h4 {
+.record-texte-bottom h4 {
     font-size: 4rem;
     text-transform: uppercase;
 }
 
 .record-texte-bottom {
     position: relative;
-    top: -30px;
+    top: -320px;
     left: -290px;
 }
 
@@ -202,7 +201,7 @@ h4 {
 }
 @media screen and (max-width: 1010px){
     .record-paragraphe {
-        top: 160px;
+        top: 100px;
         left: 20px;
     }
     .record-texte-bottom {
@@ -237,10 +236,10 @@ h4 {
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
     h4 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
 }
@@ -259,10 +258,10 @@ h4 {
     }
     
     h3 {
-        font-size: 1rem;
+        font-size: 3rem;
     }
     h4 {
-        font-size: 1rem;
+        font-size: 3rem;
     }
     .record-texte-bottom {
         top: -100px;
