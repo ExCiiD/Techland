@@ -1,4 +1,4 @@
-*{
+* {
     margin:0;
     padding:0px;
     box-sizing: border-box;
@@ -286,61 +286,67 @@ h4 {
         left: 45px;
     }
 }
+
 /* CATEGORY CONTAINER */
-.category-container{
-    width:100%;
+.category-container {
+    width: 100%;
     height: 600px;
 }
-    /* CARTE CATEGORIE */
-        .category-carte{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .img-category{
-            position: relative;
-                    width: 550px ;
-                    height: 197px;
-                    top: 75px;
-                    left: 26px;
- 
-                }
-        .txt-type-category{
-                    background-color:#A568E7;
-                    border-radius: 10px;
-                    width: 600px;
-                    font-size: 60px;
-                    display: flex;
-                    justify-content: center;
-                    padding:175px 0px 10px 0px;
-                }
-    /* CARTE CATEGORIE */
 
-        /* CSS POUR CAROUSEL ACCUEIL */
-        .gallery {
-            height: 100%;
-            padding: 1rem;
-            display: grid;
-            grid-template-columns: repeat(4, 3fr);
-            grid-template-rows: 1fr;
-            grid-column-gap: 1rem;
-            grid-row-gap: 1rem;
-            overflow: scroll;
-            scroll-snap-type: both mandatory;
-            scroll-padding: 1rem;
-        }
+/* CARTE CATEGORIE */
+.category-carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-        .active {
-            scroll-snap-type: unset;
-        }
+.img-category {
+    position: relative;
+    width: 550px;
+    height: 197px;
+    top: 75px;
+    left: 26px;
 
-        .li-carousel {
-            scroll-snap-align: center;
-            display: inline-block;
-            border-radius: 3px;
-            font-size: 0;
-        }
-        /* CSS POUR CAROUSEL ACCUEIL */
+}
+
+.txt-type-category {
+    background-color: #A568E7;
+    border-radius: 10px;
+    width: 600px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 175px 0px 10px 0px;
+}
+
+/* CARTE CATEGORIE */
+
+/* CSS POUR CAROUSEL ACCUEIL */
+.gallery {
+    height: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    overflow: scroll;
+    scroll-snap-type: both mandatory;
+    scroll-padding: 1rem;
+}
+
+.active {
+    scroll-snap-type: unset;
+}
+
+.li-carousel {
+    scroll-snap-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 0;
+}
+
+/* CSS POUR CAROUSEL ACCUEIL */
 /* CATEGORY CONTAINER */
 /* CSS Footer */
 
@@ -506,15 +512,15 @@ h4 {
         width: 100%;
         height: auto;
     }
-    
+
     .img-fond-footer {
         height: 80%;
         width: auto;
     }
-    
-    
+
+
     /* container TOP */
-    
+
     .top_container {
         flex-direction: column;
         width: 100%;
@@ -522,35 +528,35 @@ h4 {
         margin: initial;
         text-align: center;
     }
-    
-    
+
+
     /* section Reseaux */
     .reseaux_nav_barre {
         width: 100%;
     }
-    
+
     .social_networks {
         display: flex;
         flex-direction: column;
     }
-    
+
     .titre_social_networks {
         margin-left: initial;
         text-align: center;
     }
-    
+
     .logo_social_networks {
         width: 100%;
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
-    
+
     .logo_social_networks img {
         margin-left: initial;
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     .nav_barre_footer {
         width: 100%;
         margin: initial;
@@ -559,7 +565,7 @@ h4 {
         justify-content: center;
         flex-wrap: wrap;
     }
-    
+
     .nav_barre_footer ul {
         width: 100%;
         justify-content: space-evenly;
@@ -567,41 +573,41 @@ h4 {
         flex-wrap: wrap;
         padding: initial;
     }
-    
+
     .nav_barre_footer li {
         margin-left: initial;
     }
-    
-    
+
+
     /* section logo + localisation */
-    
+
     .logo_localisation {
         width: 100%;
         align-items: center;
         margin: initial;
         margin-top: 50px;
     }
-    
+
     .logo_footer {
         height: 150px;
         width: 100%;
         justify-content: center;
     }
-    
+
     .localisation_footer {
         text-align: center;
         font-size: 1rem;
     }
-    
+
     .localisation_footer p {
         margin-left: initial;
         flex-wrap: wrap;
-        
+
     }
-    
-    
+
+
     /* section bot container */
-    
+
     .bot_container {
         flex-direction: column;
         align-items: center;
@@ -610,14 +616,14 @@ h4 {
         margin-top: 50px;
         padding-bottom: 40px;
     }
-    
+
     .privacy_condition {
         width: 100%;
         margin-left: initial;
         align-items: center;
         justify-content: center;
     }
-    
+
 
     .privacy_condition ul {
         flex-wrap: wrap;
@@ -633,7 +639,7 @@ h4 {
 
 .formulaire_section {
     width: 100%;
-    height: 100vh ;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -831,28 +837,125 @@ h4 {
 
 
 @media screen and (max-width: 768px) {
-    
+
     .formulaire_container {
         font-size: 1.5rem;
         width: 100%;
     }
-    
+
     .items_input {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    
+
     .items_formulaire {
         margin: initial;
         margin: 20px 0;
     }
-  
+
     .formulaire_titre_contact {
         font-size: 2rem;
     }
-    
+
     .formulaire_contact_option_1 {
         padding: 30px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section carousel */
+.carousel {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/hero-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+div#slider {
+    width: 100%;
+    max-width: 1000px;
+}
+
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+}
+
+div#slider figure img {
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+div#slider {
+    width: 100%;
+    max-width: 1000px;
+    overflow: hidden
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: 0%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
 }
