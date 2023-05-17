@@ -13,6 +13,8 @@ function openFormulaire1() {
 $('input').on('change', function() {
     $('body').toggleClass('blue');
   });
+
+
   function openSectionPortable() {
     document.querySelector ('.sectionPortable').classList.remove('letsgo1');
     document.querySelector ('.sectionPeripherique').classList.remove('letsgo1');
@@ -39,4 +41,25 @@ function openSectionEcranPc() {
     document.querySelector ('.sectionPeripherique').classList.remove('letsgo1');
     document.querySelector ('.sectionTourPC').classList.remove('letsgo2');
     document.querySelector ('.sectionEcranPC').classList.add('letsgo3'); 
+}
+
+
+
+function openMenuBurger() {
+    document.querySelector ('.container_nav_burger').classList.add('active');
+    document.querySelector ('.nav_close').classList.add('active');
+}
+    function closeMenuBurger() {
+    document.querySelector ('.container_nav_burger').classList.remove('active'); 
+    document.querySelector ('.nav_close').classList.remove('active');
+    
+}
+
+
+function openBarreRecherche() {
+    document.querySelector ('.searchbar').classList.add('searchopen'); 
+}
+
+function closeBarreRecherche() {
+    document.querySelector ('.searchbar').classList.remove('searchopen'); 
 }

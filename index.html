@@ -10,24 +10,37 @@
 </head>
 
 <body>
-    <nav class="topnavbar">
-        <div class="logo">  
+    <nav class="topnavbar" >
+        <div class="logo">
             <img src=".//img/logo_techland.png" alt="logotechland">
         </div>
-         <div class="link">
-            <ul>
-                <li><a href="index.html" class="topnav-links">Accueil</li></a>
-                <li><a href="gallerie.html" class="topnav-links">Produits</li></a>
-                <li><a href="contact.html" class="topnav-links">Contact</li></a>
-            </ul>
+
+        <div class="container_nav_burger">
+            
+        <div class="nav_close" onclick="closeMenuBurger()">
+            <img src="img/icons8-effacer-50.png" alt="croix close">
         </div>
 
-        <div class ="icon-right">
-            <img src=".//img/icon_recherche.png" alt="recherche">
-            <img src=".//img/vector_panier.png" alt="panier">
+            <div class="link">
+                
+                <ul class="link_ul_nav">
+                    <li><a href="index.html" class="topnav-links">Accueil</li></a>
+                    <li><a href="gallerie.html" class="topnav-links">Produits</li></a>
+                    <li><a href="contact.html" class="topnav-links">Contact</li></a>
+                </ul>
+            </div>
+            <input type="text" name="searchbar" class="searchbar" placeholder="Recherchez vos produits...">
+            <div class="icon-right">
+                <img src=".//img/icon_recherche.png" alt="recherche" class="barrerecherche" onclick="openBarreRecherche()">
+                <img src=".//img/vector_panier.png" alt="panier">
+            </div>
         </div>
+        <div class="svg_menu_burger" onclick="openMenuBurger()">
+            <img src="img/icons8-menu-50.png" alt="icon burger">
+        </div>
+
     </nav>
-    <div class="img-bg">
+    <div class="img-bg" onclick="closeBarreRecherche()">
     <header class="header_container">
 
         <div class="header_container_block">
@@ -107,7 +120,7 @@
         <div class="upper-part">
           <div class="info-area" id="test">
             <label class="song-info" id="song-info-1">
-                <a href="#"><div class="title">ECRAN PC</div></a>
+                <a href="gallerie.html#ecran_pc"><div class="title" onclick="openSectionEcranPc()">ECRAN PC</div></a>
             </label>
             <label class="song-info" id="song-info-2">
                 <a href="#"><div class="title">PC PORTABLE</div></a>
