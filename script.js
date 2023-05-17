@@ -8,3 +8,9 @@ function openFormulaire1() {
     
 }
 
+// imagesLoaded.js, Hammer.js, and Sequence.js loaded as external assets
+
+$('input').on('change', function() {
+    $('body').toggleClass('blue');
+  });
+  

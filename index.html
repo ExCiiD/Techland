@@ -2,137 +2,176 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechLand</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <div class="img-bg">
+        <nav class="topnavbar">
+            <div class="logo">
+                <!-- div logo background -->
 
-    <div class="img-bg">       
-    <nav class="topnavbar">
-        <div class="logo">  <!-- div logo background --> 
-
-            <img src=".//img/logo_techland.png" alt="logotechland">
-        </div>
-
-         <div class="link">
-            <ul>
-                <li>Accueil</li>
-                <li>Produits</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-
-        <div class ="icon-right">
-            <img src=".//img/icon_recherche.png" alt="recherche">
-            <img src=".//img/vector_panier.png" alt="panier">
-        </div>
-    </nav>
-    <header class="header_container">
-
-        <div class="header_container_block">
-
-            <div class="header_text">
-
-                <h1>TECHLAND, UNE COMMUNAUTE DE GAMERS</h1>
-
-                <P>Rejoignez-nous et découvrez nos produits</P>
-            
+                <img src=".//img/logo_techland.png" alt="logotechland" />
             </div>
 
-            <div class="header_button_container">
-                <button class="offre">Nos offres</button>
-
-                <button class="contactez">Contactez-nous</button>
+            <div class="link">
+                <ul>
+                    <li>Accueil</li>
+                    <li>Produits</li>
+                    <li>Contact</li>
+                </ul>
             </div>
-        </div>
-    </header>
-    </div>          <!-- div logo -->
-     <!--Description-->
-     <section class="record">
+
+            <div class="icon-right">
+                <img src=".//img/icon_recherche.png" alt="recherche" />
+                <img src=".//img/vector_panier.png" alt="panier" />
+            </div>
+        </nav>
+        <header class="header_container">
+            <div class="header_container_block">
+                <div class="header_text">
+                    <h1>TECHLAND, UNE COMMUNAUTE DE GAMERS</h1>
+
+                    <p>Rejoignez-nous et découvrez nos produits</p>
+                </div>
+
+                <div class="header_button_container">
+                    <button class="offre">Nos offres</button>
+
+                    <button class="contactez">Contactez-nous</button>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- div logo -->
+    <!--Description-->
+    <section class="record">
         <div class="record-image">
-            <img src="img/Play Icon.png" alt="">
-            <img src="img/Record Icon.png" alt="">
-            <img src="img/Share Icon.png" alt="">
+            <img src="img/Play Icon.png" alt="" />
+            <img src="img/Record Icon.png" alt="" />
+            <img src="img/Share Icon.png" alt="" />
         </div>
         <div class="record-paragraphe">
-            <h3 class="colortxt">Bats des <br> records</h3>
+            <h3 class="colortxt">
+                Bats des <br />
+                records
+            </h3>
         </div>
         <div class="violet">
-            <img src="img/pc_gaming_promo.png" alt="" class="montage-pc">
+            <img src="img/pc_gaming_promo.png" alt="" class="montage-pc" />
         </div>
         <div class="record-texte-bottom">
-            <h4 class="colortxt">Montre <br> ton <br> talent</h4>
-            <p class="colortxt">Mauris blandit aliquet elit, eget tincidunt <br> nibh pulvinar a. Donec rutrum congue leo <br> eget
-                malesuada. Vivamus magjusto.</p>
-            <br>
+            <h4 class="colortxt">
+                Montre <br />
+                ton <br />
+                talent
+            </h4>
+            <p class="colortxt">
+                Mauris blandit aliquet elit, eget tincidunt <br />
+                nibh pulvinar a. Donec rutrum congue leo <br />
+                eget malesuada. Vivamus magjusto.
+            </p>
+            <br />
             <h5 class="colortxt">Description</h5>
-            <img src="img/fleche-droite (1).png" alt="" class="fleche">
+            <img src="img/fleche-droite (1).png" alt="" class="fleche" />
         </div>
     </section>
+    
 
-    <section class="category-container">
-        <ul class="gallery">
+    <section class="container_produit_description">
+    <div class="container">
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+        <input type="radio" name="slider" id="item-4">
+      <div class="cards">
+        <label class="card" for="item-1" id="song-1">
+          <img src="img/ecran_pc.png" alt="song">
+        </label>
+        <label class="card" for="item-2" id="song-2">
+          <img src="img/pc-portable.png" alt="song">
+        </label>
+        <label class="card" for="item-3" id="song-3">
+          <img src="img/Tour_x3.png" alt="song">
+        </label>
+        <label class="card" for="item-4" id="song-4">
+            <img src="img/peripherique_x3.png" alt="song">
+          </label>
+      </div>
+      <div class="player">
+        <div class="upper-part">
+          <div class="info-area" id="test">
+            <label class="song-info" id="song-info-1">
+              <div class="title">ECRAN PC</div>
+            </label>
+            <label class="song-info" id="song-info-2">
+              <div class="title">PC PORTABLE</div>
+            </label>
+            <label class="song-info" id="song-info-3">
+              <div class="title">TOUR PC</div>
+            </label>
+            <label class="song-info" id="song-info-4">
+            <div class="title">PERIPHERIQUE</div>
+            </label>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+        <!-- <ul class="gallery">
             <li class="li-carousel">
                 <div class="category-carte">
-                    <img src="img/Tour_x3.png" class="img-category"> 
+                    <img src="img/Tour_x3.png" class="img-category" alt="Tour_x3"> 
                     <p class="txt-type-category">TOURS</p>    
                 </div>
             </li>
             <li class="li-carousel">
                 <div class="category-carte">
-                    <img src="img/pc_portable_x3.png" class="img-category">
+                    <img src="img/pc_portable_x3.png" class="img-category" alt="Tour_x3">
                     <p class="txt-type-category">PORTABLES</p>
                 </div>
             </li>
             <li class="li-carousel">
                 <div class="category-carte">
-                    <img src="img/Ecran_x3.png" class="img-category">
+                    <img src="img/Ecran_x3.png" class="img-category" alt="Tour_x3">
                     <p class="txt-type-category">ECRANS</p>
                 </div>
             </li>
             <li class="li-carousel">
                 <div class="category-carte">
-                    <img src="img/peripheque_x3.png" class="img-category">
+                    <img src="img/peripheque_x3.png" class="img-category" alt="Tour_x3">
                     <p class="txt-type-category">PERIPHERIQUES</p>
                 </div>
             </li>
-        </ul>
-    </section>
-
-
+        </ul> -->
 
     <footer class="footer_container">
-
-
         <div class="img-fond-footer">
-        <img src="img/Violate_Elipse_3.png" alt="Violate_Elipse_3" class="image-fond-footer">
+            <img src="img/Violate_Elipse_3.png" alt="Violate_Elipse_3" class="image-fond-footer" />
         </div>
 
         <!-- footer class top -->
         <div class="top_container">
-
             <!-- réseaux + nav barre -->
             <div class="reseaux_nav_barre">
-
-
                 <!-- Social Networks -->
                 <div class="social_networks">
-
                     <div class="titre_social_networks">
                         <h1>NOS RESEAUX</h1>
                     </div>
 
                     <div class="logo_social_networks">
-                        <img src="img/Facebook.png" alt="Facebook_icons">
-                        <img src="img/Twitter.png" alt="Twitter_icons">
-                        <img src="img/Instagram.png" alt="Instagram_icons">
-                        <img src="img/Youtube.png" alt="Youtube_icons">
+                        <img src="img/Facebook.png" alt="Facebook_icons" />
+                        <img src="img/Twitter.png" alt="Twitter_icons" />
+                        <img src="img/Instagram.png" alt="Instagram_icons" />
+                        <img src="img/Youtube.png" alt="Youtube_icons" />
                     </div>
-
                 </div>
 
                 <!-- Nav barre footer -->
@@ -145,35 +184,37 @@
                 </div>
             </div>
 
-
             <!-- logo + localisation -->
 
             <div class="logo_localisation">
-
                 <!-- logo footer -->
 
                 <div class="logo_footer">
-                    <img src="img/logo_techland.png" alt="logo_techland">
+                    <img src="img/logo_techland.png" alt="logo_techland" />
                 </div>
 
                 <!-- localisation -->
 
                 <div class="localisation_footer">
-                    <h1>Localisation :</h1><br>
-                    <p>- 5 rue de Montford<br>
-                        ZI 97410 St Pierre</p><br>
-                    <p>tel : +262 262 52 65 58</p><br>
-                    <p><a href="mailto:serviceclient@contacttechland.com">mail : serviceclient@contacttechland.com</a></p>
+                    <h1>Localisation :</h1>
+                    <br />
+                    <p>
+                        - 5 rue de Montford<br />
+                        ZI 97410 St Pierre
+                    </p>
+                    <br />
+                    <p>tel : +262 262 52 65 58</p>
+                    <br />
+                    <p>
+                        <a href="mailto:serviceclient@contacttechland.com">mail : serviceclient@contacttechland.com</a>
+                    </p>
                 </div>
             </div>
-
         </div>
-
 
         <!-- bot_footer -->
 
         <div class="bot_container">
-
             <!-- privacy and condition -->
 
             <div class="privacy_condition">
@@ -185,9 +226,7 @@
 
             <!-- copyright -->
 
-            <div class="copyrights">
-                Copyright © TECHLAND
-            </div>
+            <div class="copyrights">Copyright © TECHLAND</div>
         </div>
     </footer>
     <script src="script.js"></script>
