@@ -1174,6 +1174,7 @@ html {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 150px;
 }
 
 .tableau_section_fonctionnalite {
@@ -1511,46 +1512,46 @@ div#slider figure {
 /* section description Katana 15 B12V */
 
 
-.section_katana {
+.section_katana{
     display: flex;
     justify-content: center;
     height: 50vh;
-
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.description_container_katana {
+.description_container_katana{
     display: flex;
     flex-direction: column;
     color: white;
     align-items: center;
     justify-content: center;
     height: 40vh;
-    background-image: url("img/background_katana15.jpg");
     background-size: cover  ;
     width: 80%;
     margin-top: 30px;
-
+   
 }
 
-.katana_sharpen_container {
+.katana_sharpen_container{
     margin-bottom: 30px;
     text-align: center;
 }
 
 
-.katana_sharpen_container h1 {
-    font-size: 40px;
+.katana_sharpen_container h1{
     margin-bottom: 30px;
 }
 
-.section_katana p {
-    font-size: 12px;
+.section_katana p{
+    font-size: 15px;
     width: 90%;
     margin: 15px;
     text-align: center;
+    letter-spacing: 2px;
 }
 
-.button_katana {
+.button_katana{
     width: 100px;
     height: 30px;
     background-color: brown;
@@ -1558,35 +1559,36 @@ div#slider figure {
     border-bottom: 0.5px brown;
     border-right: 2px solid red;
     border-left: 2px solid red;
-
+    cursor: pointer;
 }
 
 
 
 @media screen and (max-width: 768px) {
+    
 
 
-
-    .katana_sharpen_container h1 {
+    .katana_sharpen_container h1{
         font-size: 30px;
 
     }
 
-    .katana_sharpen_container h2 {
-        font-size: 20px;
+    .katana_sharpen_container h2{
+        font-size: 20px;  
     }
 
-    .section_katana p {
+    .section_katana p{
         font-size: 10px;
         width: 90%;
     }
 
-    .description_container_katana {
+    .description_container_katana{
         justify-content: center;
     }
-}
+  }
 
 /* Fin section description Katana 15 B12V */
+
 
 /* section choix gallerie */
 
