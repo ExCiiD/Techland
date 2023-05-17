@@ -1108,6 +1108,11 @@ div#slider figure {
     line-height: 80px;
     text-align: center;
   }
+
+  .song-info a {
+    text-decoration: none;
+    list-style: none;
+  }
   
   .progress {
     display: block;
