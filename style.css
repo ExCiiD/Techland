@@ -240,6 +240,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-top: 250px;
 }
 
 .header_button_container {
@@ -601,37 +602,48 @@ html {
     border: solid #8f01ff 2px;
 }
 
-.sectionPeripherique {
+#sectionPeripherique {
     display: none;
 }
 
-.sectionTourPC {
+#sectionTourPC {
     display: none;
 }
 
-.sectionEcranPC {
+ #sectionEcranPC {
     display: none;
 }
 
-.sectionPortable.letsgo1 {
+ #sectionPortable.letsgo1 {
     display: none;
 }
 
-.sectionPeripherique.letsgo1 {
+ #sectionPeripherique.letsgo1 {
     display: block;
 }
 
-.sectionTourPC.letsgo2 {
+ #sectionTourPC.letsgo2 {
     display: block;
 }
 
-.sectionEcranPC.letsgo3 {
+ #sectionEcranPC.letsgo3 {
     display: block;
 }
 
 /*BUTTON CARD */
 /* DESCRIPTION CARD */
+@media screen and (max-width: 425px) {
+    .img-DESCcard-portable {
+    width: 200px;
+    height: 150px;
+    position: relative;
+    top: 170px;
+    }
+    .description hr {
+        width: 230px;
+    }
 
+}
 /* CSS Footer */
 
 .footer_container {
@@ -641,6 +653,7 @@ html {
     color: white;
     width: 100%;
     height: 350px;
+    background-color: black;
 }
 
 .img-fond-footer {
@@ -1159,7 +1172,6 @@ html {
     height: auto;
     display: flex;
     flex-direction: column;
-    background-color: black;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -1244,17 +1256,20 @@ html {
 /* Section carousel */
 .carousel {
     width: 100%;
-    height: 100vh;
-    background-image: url(img/hero-background.png);
+    background-image: url(img/background_katana15.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    padding-top: 70px;
+    align-items: center;
 }
 
 div#slider {
-    width: 100%;
+    width: 600px;
     max-width: 1000px;
+    overflow: hidden;
 }
 
 div#slider figure {
@@ -1264,18 +1279,13 @@ div#slider figure {
     padding: 0;
     font-size: 0;
     text-align: left;
+    top: -50px;
 }
 
 div#slider figure img {
     width: 20%;
     height: auto;
     float: left;
-}
-
-div#slider {
-    width: 100%;
-    max-width: 1000px;
-    overflow: hidden
 }
 
 @keyframes slidy {
@@ -1401,45 +1411,36 @@ div#slider figure {
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
-}
-
-#item-1:checked~.cards #song-3,
-#item-2:checked~.cards #song-4,
-#item-3:checked~.cards #song-1,
-#item-4:checked~.cards #song-2 {
-    transform: translatez(0%) scale(.8);
-    opacity: 0;
-    z-index: 0;
-}
-
-#item-1:checked~.cards #song-4,
-#item-2:checked~.cards #song-1,
-#item-3:checked~.cards #song-2,
-#item-4:checked~.cards #song-3 {
-    transform: translatex(-60%) scale(.8);
-    opacity: .4;
-    z-index: 0;
-}
-
-#item-1:checked~.cards #song-2,
-#item-2:checked~.cards #song-3,
-#item-3:checked~.cards #song-4,
-#item-4:checked~.cards #song-1 {
-    transform: translatex(60%) scale(.8);
-    opacity: .4;
-    z-index: 0;
-}
-
-#item-1:checked~.cards #song-1,
-#item-2:checked~.cards #song-2,
-#item-3:checked~.cards #song-3,
-#item-4:checked~.cards #song-4 {
-    transform: translatex(0) scale(1);
-    opacity: 1;
-    z-index: 1;
-}
-
-.player {
+  }
+  
+  #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-4, #item-3:checked ~ .cards #song-1, #item-4:checked ~ .cards #song-2 {
+      transform: translatez(0%) scale(.8);
+      opacity: 0;
+      z-index: 0;
+    }
+  
+  #item-1:checked ~ .cards #song-4, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2, #item-4:checked ~ .cards #song-3 {
+      transform: translatex(-60%) scale(.8);
+      opacity: .4;
+      z-index: 0;
+    }
+    
+    #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-4, #item-4:checked ~ .cards #song-1 {
+      transform: translatex(60%) scale(.8);
+      opacity: .4;
+      z-index: 0;
+    }
+    
+    #item-1:checked ~ .cards #song-1, #item-2:checked ~ .cards #song-2, #item-3:checked ~ .cards #song-3, #item-4:checked ~ .cards #song-4 {
+      transform: translatex(0) scale(1);
+      opacity: 1;
+      z-index: 1;     
+    }
+    .cards img {
+        box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+      }
+      
+  .player {
     background-color: transparent;
     border-radius: 8px;
     min-width: 600px;
@@ -1517,7 +1518,6 @@ div#slider figure {
 .section_katana {
     display: flex;
     justify-content: center;
-    background-color: #1E1E1E;
     height: 50vh;
 
 }
@@ -1530,7 +1530,7 @@ div#slider figure {
     justify-content: center;
     height: 40vh;
     background-image: url("img/background_katana15.jpg");
-    background-size: cover;
+    background-size: cover  ;
     width: 80%;
     margin-top: 30px;
 
@@ -1538,6 +1538,7 @@ div#slider figure {
 
 .katana_sharpen_container {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 
@@ -1550,6 +1551,7 @@ div#slider figure {
     font-size: 12px;
     width: 90%;
     margin: 15px;
+    text-align: center;
 }
 
 .button_katana {
