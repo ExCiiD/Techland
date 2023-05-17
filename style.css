@@ -64,6 +64,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 50px;
 }
 /* DESCRIPTION CARD */
 .description-card {
@@ -128,18 +129,7 @@
  .sectionEcranPC {
     display: none;
  }
- 
- .sectionPeripherique {
-    display: none;
- }
 
- .sectionTourPC {
-    display: none;
- }
-
- .sectionEcranPC {
-    display: none;
- }
  .sectionPortable.letsgo1 {
     display: none;
  }
