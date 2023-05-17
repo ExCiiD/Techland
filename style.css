@@ -877,6 +877,88 @@ h4 {
 
 
 
+/* tableau fonctionnalité section */
+
+.tableau_fonction_pc {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tableau_section_fonctionnalite {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fonctionnalite_1 {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 396px;
+    padding: 10px;
+    margin: 10px;
+    border: solid 2px #A568E7;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fonctionnalite_1 h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.fonctionnalite_1 p {
+    font-style: italic;
+}
+
+.fonctionnalite_1 img {
+    height: 78px;
+    width: 200px;
+}
+
+@media screen and (max-width: 1260px) {
+
+    .tableau_fonction_pc {
+        flex-direction: row;
+        justify-content: center;
+        margin: initial;
+    }
+
+    .tableau_section_fonctionnalite {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .fonctionnalite_1 {
+        width: 250px;
+        font-size: 0.8rem;
+        margin: initial;
+        margin: 10px 0;
+    }
+
+    .fonctionnalite_1 img {
+        height: 58px;
+        width: 150px;
+    }
+
+    .fonctionnalite_1 h1 {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
 
 
 
