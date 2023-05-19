@@ -607,6 +607,11 @@ html {
     border: solid #8f01ff 2px;
 }
 
+.card-button-container a {
+    text-decoration: none;
+    color: white;
+}
+
 #sectionPeripherique {
     display: none;
 }
