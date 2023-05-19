@@ -1472,15 +1472,16 @@ div#slider figure {
 
 .song-info .title {
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 80px;
     text-align: center;
     cursor: pointer;
 }
 
-.song-info a {
+.song-info .title a {
     text-decoration: none;
     list-style: none;
+    color: white;
 }
 
 .progress {
