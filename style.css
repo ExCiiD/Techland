@@ -134,6 +134,11 @@ html {
 @media screen and (max-width: 600px) {
 
     .container_nav_burger {
+        display: none;
+    }
+
+    .container_nav_burger.active{
+        display: block;
         position: fixed;
         top: 0;
         right: 0;
@@ -145,15 +150,9 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transform: translateX(100%);
-        transition: 0.8s transform ease-in-out;
         font-size: 1.5rem;
         font-weight: bold;
         text-transform: uppercase;
-    }
-
-    .container_nav_burger.active{
-        transform: initial;
     }
 
     .nav_close {
@@ -169,14 +168,14 @@ html {
         right: 25px;
     }
 
-
+    .container_nav_burger.active input {
+        position: relative;
+        top: -100px;
+    }
     .link {
-        display: flex;
         margin: initial;
-        height: 80%;
+        height: 65%;
         width: 100%;
-        align-items: center;
-        flex-direction: column;
     }
 
     .link_ul_nav {
@@ -472,6 +471,11 @@ html {
         left: -20px;
     }
 
+    .header_text h1 {
+        font-size: 2rem;
+    }
+    
+
 }
 
 /* CATEGORY CONTAINER */
@@ -646,13 +650,14 @@ html {
 }
 /* CSS Footer */
 
+
 .footer_container {
     list-style: none;
     display: flex;
     flex-direction: column;
     color: white;
     width: 100%;
-    height: 350px;
+    height: auto;
     background-color: black;
 }
 
@@ -807,11 +812,12 @@ html {
 @media screen and (max-width: 768px) {
     .footer_container {
         width: 100%;
-        height: auto;
+        height: 100vh;
+        justify-content: space-between;
     }
 
     .img-fond-footer {
-        height: 80%;
+        height: 50%;
         width: auto;
     }
 
@@ -908,7 +914,6 @@ html {
     .bot_container {
         flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
         margin: initial;
         margin-top: 50px;
         padding-bottom: 40px;
@@ -925,6 +930,7 @@ html {
     .privacy_condition ul {
         flex-wrap: wrap;
         padding: initial;
+       justify-content: center;
     }
 
 }
@@ -956,6 +962,7 @@ html {
     padding: 50px;
     text-align: center;
     border-radius: 5px;
+    margin-top: 25px;
 }
 
 .formulaire_container {
@@ -1139,6 +1146,7 @@ html {
     .formulaire_container {
         font-size: 1.5rem;
         width: 100%;
+        margin-bottom: 150px;
     }
 
     .items_input {
@@ -1358,15 +1366,13 @@ div#slider figure {
     padding: 0;
     width: 100%;
     height: 100%;
-}
-
-.container_produit_description {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px 10px;
     font-family: 'DM Sans', sans-serif;
     transition: background .4s ease-in;
+    overflow: hidden;
 
     &.blue {
         background-color: #428aa6;
@@ -1451,7 +1457,6 @@ div#slider figure {
     margin-bottom: 12px;
     height: 80px;
     overflow: hidden;
-
 }
 
 .play-icon {
@@ -1508,6 +1513,68 @@ div#slider figure {
 #item-4:checked~.player #test {
     transform: translateY(-285px);
 }
+
+
+
+
+@media screen and (max-width: 980px) {
+    #item-1:checked ~ .cards #song-4, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2, #item-4:checked ~ .cards #song-3 {
+        transform: translatey(-70%) scale(.8);
+        opacity: .4;
+        z-index: 0;
+      }
+      
+      #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-4, #item-4:checked ~ .cards #song-1 {
+        transform: translatey(70%) scale(.8);
+        opacity: .4;
+        z-index: 0;
+      }
+
+    .container {
+    width: 100%;
+    max-width: 500px;
+    max-height: 400px;
+}
+.upper-part {
+    left: -43px;
+    bottom: -200px;
+}
+}
+@media screen and (max-width: 600px) {
+    #item-1:checked ~ .cards #song-4, #item-2:checked ~ .cards #song-1, #item-3:checked ~ .cards #song-2, #item-4:checked ~ .cards #song-3 {
+        transform: translatey(-50%) scale(.8);
+        opacity: .4;
+        z-index: 0;
+      }
+      
+      #item-1:checked ~ .cards #song-2, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-4, #item-4:checked ~ .cards #song-1 {
+        transform: translatey(50%) scale(.8);
+        opacity: .4;
+        z-index: 0;
+      }
+.upper-part {
+    left: -43px;
+    bottom: -100px;
+}
+
+
+.song-info .title {
+    font-size: 2rem;
+}
+ 
+}
+/* 
+@media screen and (max-width: 920px) {
+
+    .container {
+    overflow: hidden ;
+    }
+
+.container_produit_description {
+    overflow: hidden;
+}
+      
+} */
 
 /* section description Katana 15 B12V */
 
