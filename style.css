@@ -1464,13 +1464,14 @@ div#slider figure {
     margin-right: 10px;
 }
 
-.song-info {
+.title {
     width: calc(100%);
     display: block;
     margin: 10px;
+    text-align: center;
 }
 
-.song-info .title {
+.title .song-info {
     color: white;
     font-size: 3rem;
     line-height: 80px;
@@ -1478,7 +1479,7 @@ div#slider figure {
     cursor: pointer;
 }
 
-.song-info .title a {
+.song-info a {
     text-decoration: none;
     list-style: none;
     color: white;
