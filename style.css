@@ -1359,7 +1359,21 @@ div#slider figure {
 
 
 
+@media screen and (max-width: 600px) {
+    div#slider {
+        width: 400px;
+    }
+}
 
+@media screen and (max-width: 400px) {
+    div#slider {
+        width: 250px;
+    }
+
+    div#slider figure {
+        top: 0px;
+    }
+}
 
 
 
